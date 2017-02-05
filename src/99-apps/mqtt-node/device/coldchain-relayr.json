@@ -1,0 +1,179 @@
+{
+    "owner": "1e8c0446-e273-4964-9bda-887634bda63d",
+    "id": "4c1fa17e-4983-4ac4-9aae-ff4071052092",
+    "name": "Zolertia IoT cold-chain monitoring",
+    "productNumber": "",
+    "description": "Monitor and control goods in a cold-chain process, with temperature, light and humidity sensors, able to control a switch.",
+    "website": "http://zolertia.io",
+    "manufacturer": {
+        "name": "Zolertia SL",
+        "website": "http://zolertia.io",
+        "contactInfo": {
+            "email": "info@zolertia.io"
+        }
+    },
+    "resources": [],
+    "firmware": {
+        "1.0.0": {
+            "binaries": "",
+            "transport": {
+                "cloud": {
+                    "commands": [
+                        {
+                            "name": "light_thresh",
+                            "path": "",
+                            "valueSchema": {
+                                "type": "number",
+                                "unit": "lux",
+                                "maximum": 32000,
+                                "minimum": 0
+                            }
+                        },
+                        {
+                            "name": "humidity_thresh",
+                            "path": "",
+                            "valueSchema": {
+                                "type": "number",
+                                "unit": "milli RH%",
+                                "maximum": 9999,
+                                "minimum": 10
+                            }
+                        },
+                        {
+                            "name": "temperature_thresh",
+                            "path": "",
+                            "valueSchema": {
+                                "type": "number",
+                                "unit": "milli Celsius",
+                                "maximum": 11999,
+                                "minimum": -1999
+                            }
+                        },
+                        {
+                            "name": "update_period",
+                            "path": "",
+                            "valueSchema": {
+                                "type": "number",
+                                "unit": "seconds",
+                                "maximum": 3600,
+                                "minimum": 5
+                            }
+                        },
+                        {
+                            "name": "enable_sensor",
+                            "path": "",
+                            "valueSchema": {
+                                "type": "boolean"
+                            }
+                        },
+                        {
+                            "name": "reboot",
+                            "path": "",
+                            "valueSchema": {
+                                "type": "boolean"
+                            }
+                        },
+                        {
+                            "name": "leds_toggle",
+                            "path": "",
+                            "valueSchema": {
+                                "type": "boolean"
+                            }
+                        }
+                    ],
+                    "readings": [
+                        {
+                            "path": "",
+                            "meaning": "alarm_light",
+                            "valueSchema": {
+                                "type": "number",
+                                "unit": "lux"
+                            }
+                        },
+                        {
+                            "path": "",
+                            "meaning": "light",
+                            "valueSchema": {
+                                "type": "number",
+                                "unit": "lux"
+                            }
+                        },
+                        {
+                            "path": "",
+                            "meaning": "alarm_humidity",
+                            "valueSchema": {
+                                "type": "number",
+                                "unit": "RH%"
+                            }
+                        },
+                        {
+                            "path": "",
+                            "meaning": "alarm_temperature",
+                            "valueSchema": {
+                                "type": "number",
+                                "unit": "Celsius"
+                            }
+                        },
+                        {
+                            "path": "",
+                            "meaning": "uptime",
+                            "valueSchema": {
+                                "type": "number",
+                                "unit": "seconds"
+                            }
+                        },
+                        {
+                            "path": "",
+                            "meaning": "rssi",
+                            "valueSchema": {
+                                "type": "number",
+                                "maximum": -130
+                            }
+                        },
+                        {
+                            "path": "",
+                            "meaning": "parent",
+                            "valueSchema": {
+                                "type": "string"
+                            }
+                        },
+                        {
+                            "path": "",
+                            "meaning": "humidity",
+                            "valueSchema": {
+                                "type": "number",
+                                "unit": "RH%",
+                                "maximum": 100
+                            }
+                        },
+                        {
+                            "path": "",
+                            "meaning": "temperature",
+                            "valueSchema": {
+                                "type": "number",
+                                "unit": "Celsius",
+                                "maximum": 120,
+                                "minimum": -20
+                            }
+                        },
+                        {
+                            "path": "",
+                            "meaning": "ID",
+                            "valueSchema": {
+                                "type": "string"
+                            }
+                        }
+                    ],
+                    "configurations": []
+                }
+            },
+            "repository": "",
+            "releaseDate": "",
+            "releaseNotes": "",
+            "documentation": ""
+        }
+    },
+    "createdAt": "2016-05-11T07:41:31.214Z",
+    "updatedAt": "2016-11-22T15:31:06.419Z"
+}
+
